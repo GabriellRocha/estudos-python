@@ -1,3 +1,8 @@
+'''Dicionários não são sequencias, logo não mantém nenhuma
+ordem específica de seus objetos. Mas é possível exibir os
+itens de um dicionário em ordem, usando alguns métodos
+interessantes'''
+
 '''Uma maneira de fazer os itens serem devolvidos em determinada
 sequencia é ordenar as chaves á medida que são devolvidas no
 laço for. Podemos uar a função sorted() para obter uma cópia
@@ -10,8 +15,8 @@ linguagens_favoritas = {
     'phil': "Python"
 }
 
-for name in sorted(linguagens_favoritas.keys()):
-    print(f'{name.title()} obrigado por participar da pesquisa.')
+for chave in sorted(linguagens_favoritas.keys()):
+    print(f'{chave.title()} obrigado por participar da pesquisa.')
 
 
 '''Essa instrução for é como as outras
@@ -31,3 +36,11 @@ for value in linguagens_favoritas.values():
 repetições. Isso pode funcionar bem com uma quantidade pequena de valores,
 mas em uma enquete grande, o resultado seria uma lista com muitas repetições.
 '''
+
+'''Outra forma de ordenação de dicionários'''
+
+d = {'b': 3, 'd': 6, 'a': 2, 'c': 7}
+ordenada = list(d.keys())
+ordenada.sort()
+for key in ordenada:
+    print(key, '=', d[key])
