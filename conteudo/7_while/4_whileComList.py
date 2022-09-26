@@ -14,6 +14,7 @@ trabalha com ela utilize um laço while'''
 usuarios_nao_confirmados = ['Gabriel', 'José', 'Pedro', 'Lucas']
 usuarios_confirmados = []
 
+'''Python interpreta uma lista não vazia como True.'''
 while usuarios_nao_confirmados:  # Executa enquanto a lista não estiver vazia
     # Remove e retorna o último item da lista
     usuario_atual = usuarios_nao_confirmados.pop()
