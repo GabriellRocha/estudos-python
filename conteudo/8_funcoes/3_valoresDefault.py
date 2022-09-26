@@ -19,10 +19,11 @@ continua interpretando esse valor como argumento posicional,
 portanto ele é associado ao primeiro parâmetro da definição da
 função.'''
 
-print(describe('pitoco'))
+animal = describe('pitoco')
+print(animal)
+
 
 '''Ao usar valores default, qualquer parâmetro com um valor desse
 tipo deverá ser listado após todos os parâmetros que não tenham os
 valores default. Isso permite que Python possa interpretar os
 argumentos posicionais corretamente.'''
-
