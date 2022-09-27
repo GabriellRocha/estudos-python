@@ -21,5 +21,3 @@ make_pizza('calabresa', 'queijo', 'cebola', 'azeitona')
 '''O asterisco no nome do parâmetro *toppings diz a Python para
 criar uma tupla vazia chamada toppings e reunir todos os
 valores recebidos nessa Tupla.'''
-
-
